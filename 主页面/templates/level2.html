@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <title>level2</title>
+</head>
+<body>
+    
+    <div class="container">
+{{template "header"}}  
+
+
+    {{range $countcode1 := . -}}
+<tr>
+    <td>{{$countcode1.Operate1}}</td>  
+    <td>{{$countcode1.Code1}}</td>  
+    <td>{{$countcode1.Operate2}}</td>  
+    <td>{{$countcode1.Code2}}</td>  
+    <td>{{$countcode1.Operate3}}    |</td>  
+</tr>
+
+   {{- end}}  
+    <form action="/Level2answer" method="post">
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案一</label>
+            <input type="text" name="level2answer1" class="form-control" id="exampleInputanswer">
+        </div>
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案二</label>
+            <input type="text" name="level2answer2" class="form-control" id="exampleInputanswer">
+        </div>
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案三</label>
+            <input type="text" name="level2answer3" class="form-control" id="exampleInputanswer">
+        </div>
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案四</label>
+            <input type="text" name="level2answer4" class="form-control" id="exampleInputanswer">
+        </div>
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案五</label>
+            <input type="text" name="level2answer5" class="form-control" id="exampleInputanswer">
+        </div>
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案六</label>
+            <input type="text" name="level2answer6" class="form-control" id="exampleInputanswer">
+        </div>
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案七</label>
+            <input type="text" name="level2answer7" class="form-control" id="exampleInputanswer">
+        </div>
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案八</label>
+            <input type="text" name="level2answer8" class="form-control" id="exampleInputanswer">
+        </div>
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案九</label>
+            <input type="text" name="level2answer9" class="form-control" id="exampleInputanswer">
+        </div>
+        <div class="mt-3">
+            <label for="exampleInputPassword1" class="form-label">答案十</label>
+            <input type="text" name="level2answer10" class="form-control" id="exampleInputanswer">
+        </div>
+     <button type="submit" class="btn btn-primary mt-3">提交</button>
+</form>
+   
+
+
+          
+        {{template "footer"}}
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <title>level2</title>
+</head>
+<body>
+    
+    <div class="container">
+{{template "header"}}  
+<h1>您的得分：{{.Score1}}</h1>
+     
+<h1>1您的输入：{{.Level1answer1}} &nbsp;&nbsp;答案:{{.Count1.operate1}}{{.Count1.code1}}{{.Count1.operate2}}{{.Count1.code2}}{{.Count1.operate3}}={{.Count1.answer}}</h1>
+<h1>2您的输入：{{.Level1answer2}} &nbsp;&nbsp;答案:{{.Count2.operate1}}{{.Count2.code1}}{{.Count2.operate2}}{{.Count2.code2}}{{.Count2.operate3}}={{.Count2.answer}}</h1>
+<h1>3您的输入：{{.Level1answer3}} &nbsp;&nbsp;答案:{{.Count3.operate1}}{{.Count3.code1}}{{.Count3.operate2}}{{.Count3.code2}}{{.Count3.operate3}}={{.Count3.answer}}</h1>
+<h1>4您的输入：{{.Level1answer4}} &nbsp;&nbsp;答案:{{.Count4.operate1}}{{.Count4.code1}}{{.Count4.operate2}}{{.Count4.code2}}{{.Count4.operate3}}={{.Count4.answer}}</h1>
+<h1>5您的输入：{{.Level1answer5}} &nbsp;&nbsp;答案:{{.Count5.operate1}}{{.Count5.code1}}{{.Count5.operate2}}{{.Count5.code2}}{{.Count5.operate3}}={{.Count5.answer}}</h1>
+<h1>6您的输入：{{.Level1answer6}} &nbsp;&nbsp;答案:{{.Count6.operate1}}{{.Count6.code1}}{{.Count6.operate2}}{{.Count6.code2}}{{.Count6.operate3}}={{.Count6.answer}}</h1>
+<h1>7您的输入：{{.Level1answer7}} &nbsp;&nbsp;答案:{{.Count7.operate1}}{{.Count7.code1}}{{.Count7.operate2}}{{.Count7.code2}}{{.Count7.operate3}}={{.Count7.answer}}</h1>
+<h1>8您的输入：{{.Level1answer8}} &nbsp;&nbsp;答案:{{.Count8.operate1}}{{.Count8.code1}}{{.Count8.operate2}}{{.Count8.code2}}{{.Count8.operate3}}={{.Count8.answer}}</h1>
+<h1>9您的输入：{{.Level1answer9}} &nbsp;&nbsp;答案:{{.Count9.operate1}}{{.Count9.code1}}{{.Count9.operate2}}{{.Count9.code2}}{{.Count9.operate3}}={{.Count9.answer}}</h1>
+<h1>10您的输入：{{.Level1answer10}} &nbsp;&nbsp;答案:{{.Count10.operate1}}{{.Count10.code1}}{{.Count10.operate2}}{{.Count10.code2}}{{.Count10.operate3}}={{.Count10.answer}}</h1>
+<ul class="nav col-3  me-lg-auto mb-5 justify-content-center mb-md-0">
+   
+    <li><a href="/index" class="nav-link px-2 text-bule">返回</a></li>
+  
+</ul>
+          
+        {{template "footer"}}
+</div>
+</body>
+</html>
